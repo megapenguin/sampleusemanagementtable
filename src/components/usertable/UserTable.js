@@ -59,9 +59,11 @@ const UserTable = ({ store }) => {
                 <Button
                   type="primary"
                   style={{
+                    background: "#096dd9",
+                    color: "white",
                     fontWeight: "bold",
-                    borderRadius: "25px",
-                    border: ".5px solid whitesmoke",
+                    borderRadius: "5px",
+
                     boxShadow: "1px 5px whitesmoke",
                     height: "40px",
                   }}
@@ -80,10 +82,10 @@ const UserTable = ({ store }) => {
                 style={{
                   color: "red",
                   fontWeight: "bold",
-                  borderRadius: "25px",
-                  border: 0,
+                  borderRadius: "5px",
                   height: "40px",
                 }}
+                danger
               >
                 <Popconfirm
                   title="Are you sure to delete this user?"

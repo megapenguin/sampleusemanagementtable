@@ -44,19 +44,18 @@ const AddUserModal = ({ store }) => {
     <div>
       <Button
         style={{
-          background: "green",
+          background: "red",
           color: "white",
           fontWeight: "bold",
-          borderRadius: "25px",
-          border: ".5px solid whitesmoke",
-          boxShadow: "1px 5px whitesmoke",
+          borderRadius: "5px",
+          borderColor: "red",
           height: "40px",
         }}
         className="modal-button-add"
         onClick={showModal}
       >
         <span className="desktop-view">
-          <UserAddOutlined /> New User
+          <UserAddOutlined /> Add New User
         </span>
         <span className="mobile-view">
           <UserAddOutlined />
@@ -74,7 +73,7 @@ const AddUserModal = ({ store }) => {
         footer={[
           <Button
             type="danger"
-            style={{ borderRadius: "25px" }}
+            style={{ background: "red", borderRadius: "5px" }}
             key="back"
             className="modal-button"
             onClick={handleCancel}
@@ -90,7 +89,7 @@ const AddUserModal = ({ store }) => {
             style={{
               background: "green",
               color: "white",
-              borderRadius: "25px",
+              borderRadius: "5px",
             }}
           >
             Add

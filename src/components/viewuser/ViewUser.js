@@ -71,14 +71,13 @@ const ViewUser = ({ store }) => {
       <Link to="/users">
         <Button
           style={{
-            background: "red",
-            color: "white",
+            color: "red",
             fontWeight: "bold",
-            borderRadius: "25px",
-            border: ".5px solid whitesmoke",
-            boxShadow: "1px 5px whitesmoke",
+            borderRadius: "5px",
+
             height: "40px",
           }}
+          danger
         >
           <span className="desktop-view">
             <LeftOutlined /> Back to Home
@@ -108,7 +107,11 @@ const ViewUser = ({ store }) => {
         <Row>
           <Col>
             <Form.Item label="ID Number:" name="id">
-              <Input disabled={true} bordered={false} />
+              <Input
+                disabled={true}
+                bordered={false}
+                style={{ color: "grey", fontWeight: "bold" }}
+              />
             </Form.Item>
           </Col>
         </Row>
@@ -150,7 +153,7 @@ const ViewUser = ({ store }) => {
               background: "green",
               color: "white",
               fontWeight: "bold",
-              borderRadius: "25px",
+              borderRadius: "5px",
               border: ".5px solid whitesmoke",
               boxShadow: "1px 5px whitesmoke",
               height: "40px",

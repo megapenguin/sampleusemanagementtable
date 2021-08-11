@@ -8,9 +8,18 @@ const MyLayout = ({ children }) => {
   return (
     <div>
       <Layout className="layout">
-        <Header>
+        <Header style={{ background: "#1f1f1f" }}>
           <div className="logo">
-            <Menu theme="dark" mode="horizontal" defaultSelectedKeys={[]}>
+            <Menu
+              theme="dark"
+              mode="horizontal"
+              defaultSelectedKeys={[]}
+              style={{
+                background: "#1f1f1f",
+                color: "white",
+                fontWeight: "bold",
+              }}
+            >
               <Menu.Item key="1">
                 <Link to="/home">Home</Link>
               </Menu.Item>
@@ -25,7 +34,7 @@ const MyLayout = ({ children }) => {
             </Menu>
           </div>
         </Header>
-        <Content style={{ padding: "0 50px" }}>
+        <Content style={{ padding: "20px" }}>
           {/* <Breadcrumb style={{ margin: "16px 0" }}>
             <Breadcrumb.Item>Home</Breadcrumb.Item>
             <Breadcrumb.Item>List</Breadcrumb.Item>
@@ -33,7 +42,7 @@ const MyLayout = ({ children }) => {
           </Breadcrumb> */}
           <div className="site-layout-content">{children}</div>
         </Content>
-        <Footer style={{ textAlign: "center" }}>
+        <Footer style={{ textAlign: "center", color: "black" }}>
           Ant Design ©2018 Created by Ant UED
         </Footer>
       </Layout>
